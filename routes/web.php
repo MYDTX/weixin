@@ -18,5 +18,6 @@ Route::resource('admin', 'Admin\IndexController');
 Route::group(['middleware' => 'login'], function () {
     Route::resource('menu', 'Admin\MenuController');
     Route::resource('weiXin', 'Admin\WeiXinController');
+    Route::resource('message', 'Admin\MessageController');
 });
 
